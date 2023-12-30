@@ -1,6 +1,6 @@
 <template>
   <div class="w-100 h-100 d-flex justify-center align-center">
-    <v-card class="pa-4" width="500" variant="elevated" elevation="16">
+    <v-card class="pa-4" width="500" variant="elevated" elevation="24">
       <v-card-item>
         <v-card-title>CrossLink 관리자 로그인</v-card-title>
       </v-card-item>

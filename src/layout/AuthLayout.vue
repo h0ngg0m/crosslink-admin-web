@@ -1,5 +1,5 @@
 <template>
-  <v-layout>
+  <v-layout class="bg-green-lighten-1">
     <v-main>
       <slot />
     </v-main>
