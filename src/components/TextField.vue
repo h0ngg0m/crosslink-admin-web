@@ -7,6 +7,7 @@
     :label="label"
     :variant="variant"
     :type="type"
+    :loading="loading"
   />
 </template>
 
@@ -29,13 +30,15 @@ const props = withDefaults(
       | 'solo-inverted'
       | 'solo-filled'
     type?: string
+    loading?: boolean
   }>(),
   {
     flatFlag: true,
     color: 'green-darken-4',
     bgColor: 'white',
     variant: 'outlined',
-    type: 'text'
+    type: 'text',
+    loading: false
   }
 )
 

@@ -2,11 +2,13 @@ import { defineStore } from 'pinia'
 import { routerPush } from '@/utils/common'
 import { computed, ref } from 'vue'
 import { isTokenExpired } from '@/utils/token'
+import type { AdminRoleType } from '@/definitions/enums'
 
-export const useUserStore = defineStore(
-  'user',
+export const useAdminStore = defineStore(
+  'admin',
   () => {
     const accessToken = ref<string | null>(null)
+    const role = ref<AdminRoleType | null>(null)
 
     const loginFlag = computed<boolean>(() => {
       return !isTokenExpired(accessToken.value)
@@ -18,12 +20,7 @@ export const useUserStore = defineStore(
 
     async function logout(): Promise<void> {
       accessToken.value = null
-      await routerPush('/')
-    }
-
-    async function getUserInfo(): Promise<void> {
-      // TODO: get user info
-      // 1. 본인 박스 정보
+      await routerPush('/auth/login')
     }
 
     return { accessToken, loginFlag, saveAccessToken, logout }

@@ -19,3 +19,10 @@ export const City = {
 }
 
 export type CityType = (typeof City)[keyof typeof City]
+
+export const AdminRole = {
+  SUPER_ADMIN: 'SUPER_ADMIN',
+  BASIC_ADMIN: 'BASIC_ADMIN'
+}
+
+export type AdminRoleType = (typeof AdminRole)[keyof typeof AdminRole]
