@@ -15,7 +15,9 @@
       </template>
     </v-app-bar>
 
-    <v-navigation-drawer :permanent="true"> </v-navigation-drawer>
+    <v-navigation-drawer :permanent="true" width="200">
+      <LeftNav />
+    </v-navigation-drawer>
 
     <v-main>
       <slot />
@@ -28,6 +30,7 @@
 import { useAdminStore } from '@/stores/admin'
 import { storeToRefs } from 'pinia'
 import { routerPush } from '@/utils/common'
+import LeftNav from '@/layout/nav/LeftNav.vue'
 
 const adminStore = useAdminStore()
 const { logout } = adminStore
