@@ -18,3 +18,8 @@ export interface PageParams {
 export interface Boxes {
   [key: string]: Box[]
 }
+
+export interface Token {
+  accessToken: string
+  tokenType: string
+}

@@ -25,11 +25,11 @@
   </v-layout>
 </template>
 <script setup lang="ts">
-import { useUserStore } from '@/stores/user'
+import { useAdminStore } from '@/stores/admin'
 import { storeToRefs } from 'pinia'
 import { routerPush } from '@/utils/common'
 
-const userStore = useUserStore()
-const { logout } = userStore
-const { loginFlag } = storeToRefs(userStore)
+const adminStore = useAdminStore()
+const { logout } = adminStore
+const { loginFlag } = storeToRefs(adminStore)
 </script>
