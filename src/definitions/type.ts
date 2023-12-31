@@ -23,3 +23,9 @@ export interface Token {
   accessToken: string
   tokenType: string
 }
+
+export interface Menu {
+  title: string
+  icon: string
+  to: string
+}
