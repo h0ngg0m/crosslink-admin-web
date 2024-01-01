@@ -10,6 +10,13 @@ export interface CommonResponse<T> {
   data: T | null
 }
 
+export interface ListResponse<T> {
+  page: number
+  itemsPerPage: number
+  itemsLength: number
+  items: T[]
+}
+
 export interface PageParams {
   page: number
   size: number

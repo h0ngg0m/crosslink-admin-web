@@ -5,12 +5,12 @@ import { DATETIME_FORMAT_STRING } from '@/definitions/constant'
 import { v4 as uuidv4 } from 'uuid'
 
 export async function routerPush(path: string): Promise<void> {
-  if (router.currentRoute.fullPath !== path) {
+  if (router.currentRoute.value.fullPath !== path) {
     await router.push(path)
   }
 }
 export async function routerReplace(path: string): Promise<void> {
-  if (router.currentRoute.fullPath !== path) {
+  if (router.currentRoute.value.fullPath !== path) {
     await router.replace(path)
   }
 }
