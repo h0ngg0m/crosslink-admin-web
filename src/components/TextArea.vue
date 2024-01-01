@@ -1,5 +1,5 @@
 <template>
-  <v-text-field
+  <v-textarea
     v-model="modelValue"
     :flat="flatFlag"
     :color="color"
