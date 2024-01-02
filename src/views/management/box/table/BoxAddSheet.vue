@@ -95,11 +95,11 @@ const isAddButtonAble = computed(
 )
 
 const rules = {
-  name: { required: helpers.withMessage('이름을 입력해주세요.', required) },
-  description: { required: helpers.withMessage('설명을 입력해주세요.', required) },
-  address: { required: helpers.withMessage('주소를 입력해주세요.', required) },
-  city: { required: helpers.withMessage('도시를 선택해주세요.', required) },
-  tel: { required: helpers.withMessage('연락처를 입력해주세요.', required) }
+  name: { required: helpers.withMessage('이름을 입력해 주세요.', required) },
+  description: { required: helpers.withMessage('설명을 입력해 주세요.', required) },
+  address: { required: helpers.withMessage('주소를 입력해 주세요.', required) },
+  city: { required: helpers.withMessage('도시를 선택해 주세요.', required) },
+  tel: { required: helpers.withMessage('연락처를 입력 해주세요.', required) }
 }
 const v$ = useVuelidate(rules, { name, description, address, city, tel })
 
