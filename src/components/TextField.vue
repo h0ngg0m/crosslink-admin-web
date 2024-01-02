@@ -10,6 +10,7 @@
     :loading="loading"
     :density="density"
     :error-messages="errorMessages"
+    :persistent-hint="true"
   />
 </template>
 
@@ -34,7 +35,7 @@ const props = withDefaults(
     type?: string
     loading?: boolean
     density?: 'default' | 'comfortable' | 'compact'
-    errorMessages?: string
+    errorMessages?: string | string[]
   }>(),
   {
     flatFlag: true,

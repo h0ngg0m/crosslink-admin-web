@@ -33,7 +33,7 @@ const props = withDefaults(
       | 'plain'
     itemColor?: string
     hideDetails?: boolean
-    errorMessages?: string
+    errorMessages?: string | string[]
   }>(),
   {
     chips: true,

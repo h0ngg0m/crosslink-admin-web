@@ -34,7 +34,7 @@ const props = withDefaults(
     type?: string
     loading?: boolean
     density?: 'default' | 'comfortable' | 'compact'
-    errorMessages?: string
+    errorMessages?: string | string[]
   }>(),
   {
     flatFlag: true,
