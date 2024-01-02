@@ -9,6 +9,7 @@
     :type="type"
     :loading="loading"
     :density="density"
+    :error-messages="errorMessages"
   />
 </template>
 
@@ -33,6 +34,7 @@ const props = withDefaults(
     type?: string
     loading?: boolean
     density?: 'default' | 'comfortable' | 'compact'
+    errorMessages?: string | string[]
   }>(),
   {
     flatFlag: true,
@@ -41,7 +43,8 @@ const props = withDefaults(
     variant: 'outlined',
     type: 'text',
     loading: false,
-    density: 'default'
+    density: 'default',
+    errorMessages: ''
   }
 )
 

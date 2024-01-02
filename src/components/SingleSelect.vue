@@ -8,6 +8,7 @@
     :variant="variant"
     :item-color="itemColor"
     :hide-details="hideDetails"
+    :error-messages="errorMessages"
   />
 </template>
 
@@ -31,13 +32,15 @@ const props = withDefaults(
       | 'plain'
     itemColor?: string
     hideDetails?: boolean
+    errorMessages?: string | string[]
   }>(),
   {
     chips: true,
     density: 'compact',
     variant: 'outlined',
     itemColor: 'green-lighten-1',
-    hideDetails: true
+    hideDetails: true,
+    errorMessages: ''
   }
 )
 
