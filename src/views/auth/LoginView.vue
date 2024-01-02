@@ -12,7 +12,7 @@
         @keydown.enter="login"
         :loading="loading"
       />
-      <v-btn class="w-100" color="green-darken-2" @click="login" :loading="loading">
+      <v-btn class="w-100" color="green-darken-1" @click="login" :loading="loading">
         <span style="font-weight: 700; font-size: 1rem">로그인</span>
       </v-btn>
       <p class="pointer text-right mt-2">회원가입</p>
